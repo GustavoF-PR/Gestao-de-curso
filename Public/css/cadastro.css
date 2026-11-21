@@ -1,0 +1,23 @@
+.cadastro{
+    background-color: red;
+    height: 650px;
+    border: 1px solid black;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.form-label{
+    size: 15px;
+    color: yellow;
+}
+
+.form-control{
+    width: 350px;
+    border-radius: 15px;
+}
+
+.btn{
+    margin-top: 25px;
+}

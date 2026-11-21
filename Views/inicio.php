@@ -17,7 +17,7 @@
 
         <div id="opcoes-cadastro">
             <a class="botao" href= "cursos/cadastrar.php">Cadastrar curso</a>
-            <a class="botao" href="cadastro.php">Cadastrar aluno</a>
+            <a class="botao" href="estudante/cadastrar.php">Cadastrar aluno</a>
 
         </div>
 
