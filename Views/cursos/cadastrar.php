@@ -16,7 +16,7 @@
 
     <div class="principal">
 
-        <form action="../Controllers/cursoController.php" method="post">
+        <form action="../../controllers/cursoController.php" method="post">
 
         <div class="mb-3">
             <label for="formGroupExampleInput" class="form-label" name="nomeCurso">Nome curso</label>
