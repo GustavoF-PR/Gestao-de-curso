@@ -20,29 +20,29 @@
         <form action="../../Controllers/cursoController.php" method="post">
 
             <div class="mb-3">
-            <label for="formGroupExampleInput" class="form-label" name="nomeCurso">Nome curso</label>
+            <label for="formGroupExampleInput" class="form-label" name="nome">Nome curso</label>
             <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Digite o nome..." required>
             </div>
 
             <div class="mb-3">
-            <label for="formGroupExampleInput2" class="form-label" name="desc">Descrição do curso</label>
+            <label for="formGroupExampleInput2" class="form-label" name="descricao">Descrição do curso</label>
             <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Digite a descricao..." required>
             </div>
 
             <div class="mb-3">
-            <label for="formGroupExampleInput2" class="form-label" name="desc">Carga horária do curso</label>
+            <label for="formGroupExampleInput2" class="form-label" name="cargaHoraria">Carga horária do curso</label>
             <input type="number" class="form-control" id="formGroupExampleInput2" placeholder="carga horária do curso..." required>
             </div>
 
             <div class="mb-3">
-            <label for="formGroupExampleInput2" class="form-label" name="desc">Valor do curso</label>
+            <label for="formGroupExampleInput2" class="form-label" name="valor">Valor do curso</label>
             <input type="number" class="form-control" id="formGroupExampleInput2" placeholder="Digite o valor do curso." required>
             </div>
 
-            <label for="formGroupExampleInput2" class="form-label" name="desc">Data de início</label>
+            <label for="formGroupExampleInput2" class="form-label" name="dataInicio">Data de início</label>
             <input type="date" class="form-control" id="formGroupExampleInput2" required>
 
-            <label for="formGroupExampleInput2" class="form-label" name="desc">Data de término</label>
+            <label for="formGroupExampleInput2" class="form-label" name="dataFim">Data de término</label>
             <input type="date" class="form-control" id="formGroupExampleInput2" required>
 
 

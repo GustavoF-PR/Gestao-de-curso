@@ -20,7 +20,7 @@
         <form action="../../Controllers/EstudanteController.php" method="post">
 
             <div class="mb-3">
-            <label for="formGroupExampleInput" class="form-label" name="nomeAluno">Nome do aluno:</label>
+            <label for="formGroupExampleInput" class="form-label" name="nome">Nome do aluno:</label>
             <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Digite o nome..." required>
             </div>
 
@@ -31,22 +31,22 @@
 
             <div class="mb-3">
             <label for="formGroupExampleInput2" class="form-label" name="endereco">Endereco</label>
-            <input type="text" class="form-control" id="formGroupExampleInput2" maxlength="3" placeholder="Digite o endereco onde o estudante reside..." required>
+            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Digite o endereco onde o estudante reside..." required>
             </div>
 
             <div class="mb-3">
-            <label for="formGroupExampleInput2" class="form-label" name="cidadde">Cidade</label>
-            <input type="text" class="form-control" id="formGroupExampleInput2" maxlength="3" placeholder="Digite a cidade onde o estudante reside..." required>
+            <label for="formGroupExampleInput2" class="form-label" name="cidade">Cidade</label>
+            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Digite a cidade onde o estudante reside..." required>
             </div>
 
             <div class="mb-3">
             <label for="formGroupExampleInput2" class="form-label" name="estado">Estado</label>
-            <input type="text" class="form-control" id="formGroupExampleInput2" maxlength="3" placeholder="Digite o estado onde o estudante reside..." required>
+            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Digite o estado onde o estudante reside..." required>
             </div>
             
             <div class="mb-3">
             <label for="formGroupExampleInput2" class="form-label" name="pais">País</label>
-            <input type="text" class="form-control" id="formGroupExampleInput2" maxlength="3" placeholder="Digite o país onde o estudante reside..." required>
+            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Digite o país onde o estudante reside..." required>
             </div>
 
 
