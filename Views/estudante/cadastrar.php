@@ -15,6 +15,8 @@
 <body>
     <h3 class="titulo">CCA - Cadastro de Alunos</h3>
     
+    <a href="../inicio.php" class="botao">Voltar</a>
+    
     <div class="cadastro">
 
         <form action="../../Controllers/EstudanteController.php" method="post">
@@ -56,6 +58,7 @@
 
         </form>
     </div>
+
     <footer>&copy2026 desenvolvido por Gustavo e Leonardo</footer>
 </body>
 </html>

@@ -25,6 +25,9 @@ $matriculas = $matricula->listar();
 </head>
 <body>
         <h1>CCA - Mátricula</h1>
+        
+        <a href="../inicio.php" class="botao">Voltar</a>
+
         <p>Realize e consulte as matrículas dos estudantes</p>
 
 
@@ -95,8 +98,7 @@ $matriculas = $matricula->listar();
 
         </div>
 
-        <a href="../inicio.php" class="botao">Voltar</a>
-
+        <footer>&copy2026 desenvolvido por Gustavo e Leonardo</footer>
 
 </body>
 </html>
