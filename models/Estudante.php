@@ -23,5 +23,11 @@
 
         return $resultado->getInsertedCount() > 0;
         }
+
+        public function listar() {
+
+            return $this->colecao->find()->toArray();
+        }
+        
     }
     
