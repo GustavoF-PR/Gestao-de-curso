@@ -1,12 +1,12 @@
 <?php
 
-require_once "..Models/Curso.php";
+require_once "/../models/Curso.php";
 
 class CursoController{
 
     private $curso;
 
-    public function __construct($conecao){
+    public function __construct($conexao){
            $this->curso = new Curso ($conexao);
     }
     
@@ -21,13 +21,13 @@ class CursoController{
 
          if(empty($nome) || empty($descricao) || empty($cargaHoraria) || empty($valor) || empty($dataInicio) || empty($dataFim)){
             echo "Preencha todos os campos";
+            return;
+         }
 
         if($this->curso->cadastrar($nome, $descricao, $cargaHoraria, $valor, $dataInicio, $dataFim)){
-            echo "Estudante cadastrado com sucesso";
-        }
+            echo "Curso cadastrado com sucesso";
         }else{
             echo "Erro ao cadastrar o curso";
         }
-
     }
 }

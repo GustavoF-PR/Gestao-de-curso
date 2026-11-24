@@ -7,7 +7,7 @@
 
         public function __construct($conexao){
             $this->conexao = $conexao;
-            $this->colecao = $conexao->selectCollection("GestaoCursos", "cursos");
+            $this->colecao = $conexao->selectCollection("cursos");
         }
 
         public function cadastrar($nome, $descricao, $cargaHoraria, $valor, $dataInicio, $dataFim) {

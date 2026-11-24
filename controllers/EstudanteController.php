@@ -1,13 +1,13 @@
 <?php
 
-require_once "..Models/Estudante.php";
+require_once "/../Models/Estudante.php";
 
 class EstudanteController{
 
     private $estudante;
 
-    public function __construct($conecao){
-           $this->estudante = new estudante ($conexao);
+    public function __construct($conexao){
+           $this->estudante = new Estudante ($conexao);
     }
     
     public function cadastrar(){
@@ -21,6 +21,7 @@ class EstudanteController{
 
         if(empty($nome) || empty($idade) || empty($endereco) || empty($cidade) || empty($estado) || empty($pais)){
             echo "Preencha todos os campos";
+            return;
         }
         
 
