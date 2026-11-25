@@ -40,16 +40,43 @@ class CursoController{
             echo "Erro ao excluir o curso!!";
         }
     }
-}
 
-if ($_SERVER['REQUEST_METHOD'] === 'POST'){
-    $conexao = Conexao::conectar();
-    $controller = new CursoController($conexao);
-    $controller->cadastrar();
+    public function atualizar(){
+        $id = $_POST["id"];
+        $nome = $_POST["nome"];
+        $descricao = $_POST["descricao"];
+        $cargaHoraria = $_POST["cargaHoraria"];
+        $valor = $_POST["valor"];
+        $dataInicio = $_POST["dataInicio"];
+        $dataFim = $_POST["dataFim"];
+
+        if (empty($id) || empty($nome) || empty($descricao) || empty($cargaHoraria) || empty($valor) || empty($dataInicio) || empty($dataFim)){
+            echo "Preencha todos os campos!";
+            return;
+        }
+
+        if ($this->curso->atualizar($id, $nome, $descricao, $cargaHoraria, $valor, $dataInicio, $dataFim)){
+            header("Location: ../views/cursos/listar.php");
+            exit;
+        } else {
+            echo "Erro ao atualizar o curso!";
+        }
+    }
 }
 
 if (isset($_GET['acao']) && $_GET['acao'] === 'excluir' && isset($_GET['id'])) {
     $conexao =  Conexao::conectar();
     $controller = new CursoController($conexao);
     $controller->excluir($_GET['id']);
+}
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST'){
+    $conexao = Conexao::conectar();
+    $controller = new CursoController($conexao);
+
+    if (isset($_POST['acao']) && $_POST['acao'] === 'atualizar') {
+        $controller->atualizar();
+    } else {
+        $controller->cadastrar();
+    }
 }

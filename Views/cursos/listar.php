@@ -43,7 +43,7 @@ $cursos = $cursoModel->listar();
                     <td><?= $curso['dataInicio'] ?></td>
                     <td><?= $curso['dataFim'] ?></td>
                     <td>
-                        <a href="#">Editar</a>
+                        <a href="editar.php?id=<?= $curso['_id'] ?>">Editar</a>
                         <a href="../../controllers/CursoController.php?acao=excluir&id=<?= $curso['_id'] ?>" onclick="return confirm('tem certeza que deseja excluir esse curso?')">Excluir</a>
                     </td>
                 </tr>

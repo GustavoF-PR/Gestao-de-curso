@@ -34,5 +34,25 @@ use MongoDB\BSON\ObjectId;
             $resultado = $this->colecao->deleteOne(["_id" => new ObjectId($id)]);
             return $resultado->getDeletedCount() > 0;
         }
-    }
-    
+
+        public function buscarPorId($id){
+            return $this->colecao->findOne([
+                '_id' => new ObjectId($id)
+            ]);
+        }
+
+        public function atualizar($id, $nome, $descricao, $cargaHoraria, $valor, $dataInicio, $dataFim) {
+            $resultado = $this->colecao->updateOne(
+                ['_id' => new ObjectId($id)],
+                ['$set' => [
+                    'nome' => $nome,
+                    'descricao' => $descricao,
+                    'cargaHoraria' => $cargaHoraria,
+                    'valor' => $valor,
+                    'dataInicio' => $dataInicio,
+                    'dataFim' => $dataFim
+                ]]
+            );
+            return $resultado->getModifiedCount() >= 0;
+        }
+    }    

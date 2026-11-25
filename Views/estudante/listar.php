@@ -43,7 +43,7 @@ $estudantes = $estudanteModel->listar();
                     <td><?= $estudante['estado'] ?></td>
                     <td><?= $estudante['pais'] ?></td>
                     <td>
-                        <a href="#">Editar</a>
+                        <a href="editar.php?id=<?= $estudante['_id'] ?>">Editar</a>
                         <a href="../../controllers/EstudanteController.php?acao=excluir&id=<?= $estudante['_id'] ?>" onclick="return confirm('tem certeza que deseja excluir esse aluno?')">Excluir</a>
                     </td>
                 </tr>
