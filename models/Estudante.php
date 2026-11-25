@@ -1,4 +1,5 @@
 <?php 
+use MongoDB\BSON\ObjectId;
 
     class Estudante {
 
@@ -29,5 +30,9 @@
             return $this->colecao->find()->toArray();
         }
         
+        public function excluir($id){
+            $resultado = $this->colecao->deleteOne(["_id" => new ObjectId($id)]);
+            return $resultado->getDeletedCount() > 0;
+        }
     }
     

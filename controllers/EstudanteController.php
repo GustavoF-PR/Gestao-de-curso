@@ -34,6 +34,15 @@ class EstudanteController{
         }
 
     }
+
+    public function excluir($id){
+        if ($this->estudante->excluir($id)) {
+            header("Location: ../views/estudante/listar.php");
+            exit;
+        } else {
+            echo "Erro ao excluir o curso!!";
+        }
+    }
 }
 
 
@@ -41,4 +50,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST'){
     $conexao = Conexao::conectar();
     $controller = new EstudanteController($conexao);
     $controller->cadastrar();
+}
+
+if (isset($_GET['acao']) && $_GET['acao'] === 'excluir' && isset($_GET['id'])) {
+    $conexao =  Conexao::conectar();
+    $controller = new EstudanteController($conexao);
+    $controller->excluir($_GET['id']);
 }

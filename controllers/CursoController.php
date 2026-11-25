@@ -31,10 +31,25 @@ class CursoController{
             echo "Erro ao cadastrar o curso";
         }
     }
+
+    public function excluir($id){
+        if ($this->curso->excluir($id)) {
+            header("Location: ../views/cursos/listar.php");
+            exit;
+        } else {
+            echo "Erro ao excluir o curso!!";
+        }
+    }
 }
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST'){
     $conexao = Conexao::conectar();
     $controller = new CursoController($conexao);
     $controller->cadastrar();
+}
+
+if (isset($_GET['acao']) && $_GET['acao'] === 'excluir' && isset($_GET['id'])) {
+    $conexao =  Conexao::conectar();
+    $controller = new CursoController($conexao);
+    $controller->excluir($_GET['id']);
 }
