@@ -8,7 +8,7 @@ class EstudanteController{
     private $estudante;
 
     public function __construct($conexao){
-           $this->estudante = new Estudante ($conexao);
+        $this->estudante = new Estudante ($conexao);
     }
     
     public function cadastrar(){
@@ -25,14 +25,11 @@ class EstudanteController{
             return;
         }
         
-
         if($this->estudante->cadastrar($nome, $idade, $endereco, $cidade, $estado, $pais)){
             echo "Estudante cadastrado com sucesso";
-        }
-        else{
+        }else{
             echo "Erro ao cadastrar o estudante";
         }
-
     }
 
     public function excluir($id){

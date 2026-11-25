@@ -20,10 +20,10 @@ class CursoController{
         $dataFim = $_POST["dataFim"];
 
 
-         if(empty($nome) || empty($descricao) || empty($cargaHoraria) || empty($valor) || empty($dataInicio) || empty($dataFim)){
+        if(empty($nome) || empty($descricao) || empty($cargaHoraria) || empty($valor) || empty($dataInicio) || empty($dataFim)){
             echo "Preencha todos os campos";
             return;
-         }
+        }
 
         if($this->curso->cadastrar($nome, $descricao, $cargaHoraria, $valor, $dataInicio, $dataFim)){
             echo "Curso cadastrado com sucesso";
