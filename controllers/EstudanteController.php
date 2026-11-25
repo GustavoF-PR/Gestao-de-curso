@@ -1,6 +1,7 @@
 <?php
 
-require_once "/../Models/Estudante.php";
+require_once __DIR__ . "/../models/Estudante.php";
+require_once __DIR__ . "/../config/conexao.php";
 
 class EstudanteController{
 
@@ -33,4 +34,11 @@ class EstudanteController{
         }
 
     }
+}
+
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST'){
+    $conexao = Conexao::conectar();
+    $controller = new EstudanteController($conexao);
+    $controller->cadastrar();
 }

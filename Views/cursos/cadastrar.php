@@ -19,33 +19,33 @@
         
         <div class="cadastro">
 
-            <form action="../../controllers/cursoController.php" method="post">
+            <form action="../../controllers/CursoController.php" method="post">
 
                 <div class="mb-3">
-                <label for="formGroupExampleInput" class="form-label" name="nome">Nome curso</label>
-                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Digite o nome..." required>
+                <label for="nomeCurso" class="form-label">Nome curso</label>
+                <input type="text" class="form-control" id="nomeCurso" placeholder="Digite o nome..." name="nome" required>
                 </div>
 
                 <div class="mb-3">
-                <label for="formGroupExampleInput2" class="form-label" name="descricao">Descrição do curso</label>
-                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Digite a descricao..." required>
+                <label for="descCurso" class="form-label">Descrição do curso</label>
+                <input type="text" class="form-control" id="descCurso" placeholder="Digite a descricao..." name="descricao" required>
                 </div>
 
                 <div class="mb-3">
-                <label for="formGroupExampleInput2" class="form-label" name="cargaHoraria">Carga horária do curso</label>
-                <input type="number" class="form-control" id="formGroupExampleInput2" placeholder="carga horária do curso..." required>
+                <label for="carga-horariaCurso" class="form-label" >Carga horária do curso</label>
+                <input type="number" class="form-control" id="carga-horariaCurso" placeholder="carga horária do curso..." name="cargaHoraria" required>
                 </div>
 
                 <div class="mb-3">
-                <label for="formGroupExampleInput2" class="form-label" name="valor">Valor do curso</label>
-                <input type="number" class="form-control" id="formGroupExampleInput2" placeholder="Digite o valor do curso." required>
+                <label for="valorCurso" class="form-label">Valor do curso</label>
+                <input type="number" class="form-control" id="valorCurso" placeholder="Digite o valor do curso." name="valor" required>
                 </div>
 
-                <label for="formGroupExampleInput2" class="form-label" name="dataInicio">Data de início</label>
-                <input type="date" class="form-control" id="formGroupExampleInput2" required>
+                <label for="inicioCurso" class="form-label">Data de início</label>
+                <input type="date" class="form-control" id="inicioCurso" name="dataInicio" required>
 
-                <label for="formGroupExampleInput2" class="form-label" name="dataFim">Data de término</label>
-                <input type="date" class="form-control" id="formGroupExampleInput2" required>
+                <label for="finalCurso" class="form-label">Data de término</label>
+                <input type="date" class="form-control" id="finalCurso" name="dataFim" required>
 
 
                 <div class="col-12">
@@ -55,6 +55,6 @@
             </form>
         </div>
         <a href="../inicio.php" class="botao">Voltar</a>
-        <footer>&copy2026 desenvolvido por Gustavo e Leonardo</footer>
+        <footer>&copy; 2026 desenvolvido por Gustavo e Leonardo</footer>
     </body>
 </html>

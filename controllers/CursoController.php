@@ -1,6 +1,7 @@
 <?php
 
-require_once "/../models/Curso.php";
+require_once __DIR__ . "/../models/Curso.php";
+require_once __DIR__ . "/../config/conexao.php";
 
 class CursoController{
 
@@ -30,4 +31,10 @@ class CursoController{
             echo "Erro ao cadastrar o curso";
         }
     }
+}
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST'){
+    $conexao = Conexao::conectar();
+    $controller = new CursoController($conexao);
+    $controller->cadastrar();
 }

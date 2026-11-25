@@ -2,7 +2,6 @@
 require_once __DIR__ . '/../vendor/autoload.php';
 use MongoDB\Client;
 use Dotenv\Dotenv;
-use Exception;
 Dotenv::createImmutable(__DIR__ . '/..') -> load();
 
 class Conexao{

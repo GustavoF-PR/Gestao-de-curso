@@ -19,36 +19,36 @@
         
         <div class="cadastro">
 
-            <form action="../../Controllers/EstudanteController.php" method="post">
+            <form action="../../controllers/EstudanteController.php" method="post">
 
                 <div class="mb-3">
-                <label for="formGroupExampleInput" class="form-label" name="nome">Nome do aluno:</label>
-                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Digite o nome..." required>
+                <label for="nomeAluno" class="form-label">Nome do aluno:</label>
+                <input type="text" class="form-control" id="nomeAluno" placeholder="Digite o nome..." name="nome" required>
                 </div>
 
                 <div class="mb-3">
-                <label for="formGroupExampleInput2" class="form-label" name="idade">idade</label>
-                <input type="number" class="form-control" id="formGroupExampleInput2" maxlength="3" placeholder="Digite a idade..." required>
+                <label for="idadeAluno" class="form-label">idade</label>
+                <input type="number" class="form-control" id="idadeAluno" maxlength="3" placeholder="Digite a idade..." name="idade" required>
                 </div>
 
                 <div class="mb-3">
-                <label for="formGroupExampleInput2" class="form-label" name="endereco">Endereco</label>
-                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Digite o endereco onde o estudante reside..." required>
+                <label for="enderecoAluno" class="form-label">Endereco</label>
+                <input type="text" class="form-control" id="enderecoAluno" placeholder="Digite o endereco onde o estudante reside..." name="endereco" required>
                 </div>
 
                 <div class="mb-3">
-                <label for="formGroupExampleInput2" class="form-label" name="cidade">Cidade</label>
-                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Digite a cidade onde o estudante reside..." required>
+                <label for="cidadeAluno" class="form-label">Cidade</label>
+                <input type="text" class="form-control" id="cidadeAluno" placeholder="Digite a cidade onde o estudante reside..." name="cidade" required>
                 </div>
 
                 <div class="mb-3">
-                <label for="formGroupExampleInput2" class="form-label" name="estado">Estado</label>
-                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Digite o estado onde o estudante reside..." required>
+                <label for="estadoAluno" class="form-label">Estado</label>
+                <input type="text" class="form-control" id="estadoAluno" placeholder="Digite o estado onde o estudante reside..." name="estado" required>
                 </div>
                 
                 <div class="mb-3">
-                <label for="formGroupExampleInput2" class="form-label" name="pais">País</label>
-                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Digite o país onde o estudante reside..." required>
+                <label for="paisAluno" class="form-label">País</label>
+                <input type="text" class="form-control" id="paisAluno" placeholder="Digite o país onde o estudante reside..." name="pais" required>
                 </div>
 
 
@@ -59,6 +59,6 @@
             </form>
         </div>
 
-        <footer>&copy2026 desenvolvido por Gustavo e Leonardo</footer>
+        <footer>&copy; 2026 desenvolvido por Gustavo e Leonardo</footer>
     </body>
 </html>
